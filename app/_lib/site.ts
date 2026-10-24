@@ -13,8 +13,7 @@ export const OPERATOR_COUNTRY = "Nigeria";
 
 export const SUPPORT_EMAIL = "support@reactmode.dev";
 
-// Placeholder until the founder confirms the real link.
-export const COFFEE_URL = "#";
+export const COFFEE_URL = "https://buymeacoffee.com/ayo540";
 
 export const ROUTES = {
   home: "/",
