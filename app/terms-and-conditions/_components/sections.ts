@@ -1,8 +1,12 @@
-import { ROUTES, SUPPORT_EMAIL } from "@/app/_lib/site";
+import {
+  OPERATOR_COUNTRY,
+  OPERATOR_NAME,
+  ROUTES,
+  SUPPORT_EMAIL,
+} from "@/app/_lib/site";
 import type { LegalSection } from "@/components/shared/legal-page";
 
-export const TERMS_INTRO =
-  'These terms govern your use of Heed, the mobile app and the service behind it ("Heed", "we", "us"). By creating an account you agree to them. If you do not agree, please do not use Heed.';
+export const TERMS_INTRO = `These terms govern your use of Heed, the mobile app and the service behind it ("Heed", "we", "us"). Heed is run by ${OPERATOR_NAME}, an individual developer in ${OPERATOR_COUNTRY}. By creating an account you agree to these terms. If you do not agree, please do not use Heed.`;
 
 export const TERMS_SECTIONS: readonly LegalSection[] = [
   {
@@ -80,6 +84,12 @@ export const TERMS_SECTIONS: readonly LegalSection[] = [
     heading: "Liability",
     paragraphs: [
       "To the extent the law allows, Heed is provided without warranties of any kind, and we are not liable for indirect or consequential losses, or for loss of data, business or opportunity, arising from your use of Heed, including emails sent, not sent, missed or marked as read. Nothing in these terms limits liability that cannot be limited by law, or your rights as a consumer.",
+    ],
+  },
+  {
+    heading: "Governing law",
+    paragraphs: [
+      `These terms are governed by the laws of the Federal Republic of ${OPERATOR_COUNTRY}, and disputes about them will be heard by its courts. If you use Heed as a consumer, you also keep any protections the law of the country you live in gives you, and nothing in these terms takes them away.`,
     ],
   },
   {

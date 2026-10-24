@@ -8,6 +8,9 @@ export const SITE_TAGLINE = "Your inbox, read for you.";
 export const SITE_DESCRIPTION =
   "Heed reads the Gmail that doesn't need you and drafts replies for the mail that does. Nothing is sent until you tap Send.";
 
+export const OPERATOR_NAME = "Abdullah Ayoola";
+export const OPERATOR_COUNTRY = "Nigeria";
+
 export const SUPPORT_EMAIL = "support@reactmode.dev";
 
 // Placeholder until the founder confirms the real link.

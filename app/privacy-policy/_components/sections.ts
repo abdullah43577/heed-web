@@ -1,13 +1,14 @@
 import {
   GOOGLE_PERMISSIONS_URL,
   GOOGLE_USER_DATA_POLICY_URL,
+  OPERATOR_COUNTRY,
+  OPERATOR_NAME,
   ROUTES,
   SUPPORT_EMAIL,
 } from "@/app/_lib/site";
 import type { LegalSection } from "@/components/shared/legal-page";
 
-export const PRIVACY_POLICY_INTRO =
-  'Heed ("we", "us") is an inbox assistant. You connect your Gmail accounts, and Heed reads the mail that does not need you, drafts replies for the mail that does, and sends a reply only when you tap Send. This policy explains what Heed reads, what it keeps, for how long, and who else is involved. Heed is built to keep as little as it can: summaries, not mailboxes.';
+export const PRIVACY_POLICY_INTRO = `Heed ("we", "us") is an inbox assistant, run by ${OPERATOR_NAME}, an individual developer in ${OPERATOR_COUNTRY}, who is responsible for the data described here. You connect your Gmail accounts, and Heed reads the mail that does not need you, drafts replies for the mail that does, and sends a reply only when you tap Send. This policy explains what Heed reads, what it keeps, for how long, and who else is involved. Heed is built to keep as little as it can: summaries, not mailboxes.`;
 
 export const PRIVACY_POLICY_SECTIONS: readonly LegalSection[] = [
   {
@@ -116,6 +117,9 @@ export const PRIVACY_POLICY_SECTIONS: readonly LegalSection[] = [
   },
   {
     heading: "Your choices and rights",
+    paragraphs: [
+      "You have rights over your data under the Nigeria Data Protection Act 2023 and, depending on where you live, laws such as the GDPR: to see it, correct it, delete it and object to how it is used. In Heed you can exercise most of them yourself:",
+    ],
     bullets: [
       "Disconnect a Gmail account at any time in the app (Profile, then Gmail accounts). Heed revokes its access at Google and deletes that account's emails, drafts, rules and backlog runs.",
       "Delete your Heed account at any time. Heed revokes its access to every connected Gmail account and deletes everything it holds about you.",
