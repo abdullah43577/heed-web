@@ -1,0 +1,135 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (@media (prefers-color-scheme: dark));
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-inter);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.5);
+  --radius-2xl: calc(var(--radius) * 2);
+  --radius-3xl: calc(var(--radius) * 2.5);
+  --radius-4xl: calc(var(--radius) * 3);
+
+  /* Heed's palette, mirroring ../heed/src/constants/theme.ts */
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-subtle: var(--foreground-subtle);
+  --color-brand: var(--brand);
+  --color-brand-muted: var(--brand-muted);
+  --color-on-brand: var(--on-brand);
+  --color-amber: var(--amber);
+  --color-amber-tint: var(--amber-tint);
+  --color-slate: var(--slate);
+  --color-indigo: var(--indigo);
+  --color-indigo-tint: var(--indigo-tint);
+  --color-rose: var(--rose);
+}
+
+:root {
+  --canvas: #ffffff;
+  --surface: #ffffff;
+  --surface-muted: #f7f8fa;
+  --line: #ecedf0;
+  --line-strong: #dde0e5;
+  --foreground: #0b0d12;
+  --foreground-muted: #4b5563;
+  --foreground-subtle: #6b7280;
+  --brand: #0e7a63;
+  --brand-muted: #e7f4ef;
+  --on-brand: #ffffff;
+  --amber: #b45309;
+  --amber-tint: #fdf1e3;
+  --slate: #475569;
+  --indigo: #4f46e5;
+  --indigo-tint: #eef0ff;
+  --rose: #be123c;
+
+  --background: var(--canvas);
+  --card: var(--surface);
+  --card-foreground: var(--foreground);
+  --popover: var(--surface);
+  --popover-foreground: var(--foreground);
+  --primary: var(--brand);
+  --primary-foreground: var(--on-brand);
+  --secondary: var(--surface-muted);
+  --secondary-foreground: var(--foreground);
+  --muted: var(--surface-muted);
+  --muted-foreground: var(--foreground-muted);
+  --accent: var(--surface-muted);
+  --accent-foreground: var(--foreground);
+  --destructive: #b93a32;
+  --border: var(--line);
+  --input: var(--line-strong);
+  --ring: var(--brand);
+  --radius: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #0e0f12;
+    --surface: #15171b;
+    --surface-muted: #1b1e23;
+    --line: #262a31;
+    --line-strong: #323742;
+    --foreground: #f2f3f5;
+    --foreground-muted: #a9afba;
+    --foreground-subtle: #8a909c;
+    --brand: #1f9e80;
+    --brand-muted: #12302a;
+    --amber: #f0a34a;
+    --amber-tint: #3a2a14;
+    --slate: #a3aebf;
+    --indigo: #8f8cf7;
+    --indigo-tint: #23224a;
+    --rose: #f47a93;
+    --destructive: #f07167;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply scroll-smooth font-sans;
+  }
+  body {
+    @apply bg-canvas text-foreground antialiased;
+  }
+}
