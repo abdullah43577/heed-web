@@ -71,7 +71,7 @@ export const PRIVACY_POLICY_SECTIONS: readonly LegalSection[] = [
     heading: "AI processing",
     paragraphs: [
       "Sorting, summaries, drafts, rewrites, the writing style note and Ask answers are produced by large language models. To do that we send the relevant email text, together with your instructions and style note, to an AI provider, one request at a time, and keep only the result described above.",
-      "Our primary provider is Groq. When it is unavailable we use OpenRouter, and every request we send through OpenRouter requires a provider that neither retains prompts nor trains on them; if none is available, the request fails and the email is left untouched. We do not use your data to train AI models, and we do not allow our providers to.",
+      "Our primary provider is Groq, with zero data retention switched on for our whole account, so Groq does not store what we send or what it returns, and does not train on it. When Groq is unavailable we use OpenRouter, and every request we send through OpenRouter requires a provider that neither retains prompts nor trains on them; if none is available, the request fails and the email is left untouched. No AI provider we use stores your mail or trains on it, and neither do we.",
       "Email content is treated as untrusted. The models Heed uses have no ability to send, forward, delete or change settings, and their output is checked before Heed acts on it. When Heed is unsure about an email, it leaves it unread and untouched.",
     ],
   },

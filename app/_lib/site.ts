@@ -8,8 +8,9 @@ export const SITE_TAGLINE = "Your inbox, read for you.";
 export const SITE_DESCRIPTION =
   "Heed reads the Gmail that doesn't need you and drafts replies for the mail that does. Nothing is sent until you tap Send.";
 
-// Placeholders until the founder confirms the real address and link.
-export const SUPPORT_EMAIL = "support@heed.reactmode.dev";
+export const SUPPORT_EMAIL = "support@reactmode.dev";
+
+// Placeholder until the founder confirms the real link.
 export const COFFEE_URL = "#";
 
 export const ROUTES = {
