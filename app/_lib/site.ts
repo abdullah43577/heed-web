@@ -21,3 +21,8 @@ export const ROUTES = {
 
 export const GOOGLE_USER_DATA_POLICY_URL =
   "https://developers.google.com/terms/api-services-user-data-policy";
+
+export const GOOGLE_PERMISSIONS_URL =
+  "https://myaccount.google.com/permissions";
+
+export const LEGAL_UPDATED = "24 October 2026";
